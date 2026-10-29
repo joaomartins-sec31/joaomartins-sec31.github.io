@@ -63,6 +63,35 @@ body::before {
     width: 100%;
     max-width: 800px;
     text-align: center;
+    max-height: 90vh;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(15, 23, 42, 0.15) transparent;
+}
+
+.container::-webkit-scrollbar {
+    width: 11px;
+    height: 11px;
+}
+
+.container::-webkit-scrollbar-thumb {
+    background: rgba(15, 23, 42, 0.15);
+    border-radius: 9999px;
+    border: 3px solid transparent;
+    background-clip: content-box;
+}
+
+.container::-webkit-scrollbar-thumb:hover {
+    background: rgba(15, 23, 42, 0.28);
+    background-clip: content-box;
+}
+
+.container::-webkit-scrollbar-track {
+    background: transparent;
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    border-radius: 1rem;
+    background-clip: content-box;
+    box-shadow: none;
 }
 
 @keyframes fadeIn {
